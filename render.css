@@ -116,7 +116,6 @@ body main {
     cursor: pointer;
     transition: 0.5s;
     text-align: center;
-    background-color: yellow;
 }
 #data{
     text-align: left;
