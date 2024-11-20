@@ -156,30 +156,30 @@ document.getElementById('backdrop').addEventListener('click', () => {
     popIn()
 })
 all.addEventListener('click', () => {
-    displayItem(disp)
+    displayItem(display)
 })
 
 const bag = document.getElementById('selBag')
 bag.addEventListener('click', () => {
-    const bagItem = disp.filter(item => item.type === "Bag")
+    const bagItem = display.filter(item => item.type === "Bag")
     displayItem(bagItem)
 })
 
 const Short = document.getElementById('selShort')
 Short.addEventListener('click', () => {
-    const bagItem = disp.filter(item => item.type === "Short")
+    const bagItem = display.filter(item => item.type === "Short")
     displayItem(bagItem)
 })
 
 const Shirt = document.getElementById('selShirt')
 Shirt.addEventListener('click', () => {
-    const bagItem = disp.filter(item => item.type === "Shirt")
+    const bagItem = display.filter(item => item.type === "Shirt")
     displayItem(bagItem)
 })
 
 const Shoes = document.getElementById('selShoe')
 Shoes.addEventListener('click', () => {
-    const bagItem = disp.filter(item => item.type === "Shoes")
+    const bagItem = display.filter(item => item.type === "Shoes")
     displayItem(bagItem)
 })
 

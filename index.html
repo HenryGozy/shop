@@ -16,7 +16,22 @@
 
 <body>
     <section id="nav-bar">
-        <nav>
+        <nav id="nav1">
+            <a class="navlogo" href="">
+                <h2>Shopping Point .... <i class="fa-solid fa-bag-shopping"></i></h2>
+            </a>
+            <ul>
+                <li class="hide">Home</li>
+                <li class="hide">Shop</li>
+                <li class="hide">About</li>
+                <li class="hide">Contant</li>
+                <li class="hide">Service</li>
+                <li onclick="popOutCart()" id="CartLogo"><i class="fa-solid fa-bag-shopping"></i><span
+                        id="displayQuanity"></span></li>
+                <button id="buge">buger</button>
+            </ul>
+        </nav>
+        <nav id="nav2">
             <a class="navlogo" href="">
                 <h2>Shopping Point .... <i class="fa-solid fa-bag-shopping"></i></h2>
             </a>
@@ -26,13 +41,16 @@
                 <li>About</li>
                 <li>Contant</li>
                 <li>Service</li>
-                <li onclick="popOutCart()" id="CartLogo"><i class="fa-solid fa-bag-shopping"></i><span
-                        id="displayQuanity"></span></li>
+                <button id="bugec">cancel</button>
+
             </ul>
         </nav>
     </section>
+
+
     <main>
-        <section id="sideBar">
+
+        <section id="displayContainer">
             <div id="categories">
                 <ul>
                     <li id="selALL"><i class="fa-solid fa-border-all"></i> All</li>
@@ -42,15 +60,15 @@
                     <li id="selShirt">Shirt</li>
                 </ul>
             </div>
-
-        </section>
-
-        <section id="displayContainer">
             <div id="display">
 
             </div>
         </section>
+
     </main>
+
+
+
     <div id="backdrop">
 
     </div>
@@ -76,8 +94,8 @@
 
 </body>
 <script type="module" src="render.js">
-
-
 </script>
+<script src="header.js"></script>
+
 
 </html>
